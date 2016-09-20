@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name"> Just java </string>
+    <string name="static_quantity_txtvw"> quantity </string>
+    <string name="static_toppings_txtvw"> toppings </string>
+    <string name="toppings_txtvw1"> Whipped cream </string>
+    <string name="toppings_txtvw2"> Chocolate </string>
+    <string name="quantity_txtvw"> 1 </string>
+    <string name="order_txtvw"> order here </string>
+    <string name="static_price_txtvw"> price </string>
+    <string name="price_txtvw"> R0 </string>
+    <string name="btn_add"> + </string>
+    <string name="btn_sub"> - </string>
+    <string name="editxt_name"> Name </string>
+</resources>
