@@ -12,13 +12,11 @@ import android.widget.TextView;
  */
 public class MainActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     /**
      * global variables.
      */
@@ -88,23 +86,16 @@ public class MainActivity extends AppCompatActivity {
     private void display(int number) {
         TextView quantityTextView = (TextView) findViewById(
                 R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
-    }
-
-    /**
-     * This method displays the given quantity value on the screen.
-     */
-    private void displayPrice(double number) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText("" + number);
+        String mess = ""+number;
+        quantityTextView.setText(mess);
     }
 
     /**
      * This method calculates the price.
      */
     private double calculatePrice(double num) {
-        double givprice = quantity * 3.24;
-        return givprice;
+         num = quantity * 3.24;
+        return num;
     }
 
     /**
@@ -113,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     private String displayName(String nam) {
         EditText txtname=(EditText)findViewById(R.id.editxt_name) ;
 
-        setxt = txtname.getText().toString();
-        return setxt;
+        nam = txtname.getText().toString();
+        return nam;
     }
 }

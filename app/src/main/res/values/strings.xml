@@ -10,5 +10,5 @@
     <string name="price_txtvw"> R0 </string>
     <string name="btn_add"> + </string>
     <string name="btn_sub"> - </string>
-    <string name="editxt_name"> Name </string>
+    <string name="editxt_name"> enter your name here </string>
 </resources>
