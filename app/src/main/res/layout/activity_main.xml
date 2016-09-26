@@ -18,6 +18,7 @@
         tools:context="za.co.example.admin.justjava.MainActivity">
 
         <EditText
+            android:textAlignment="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
@@ -28,7 +29,7 @@
 
         <TextView
             android:id="@+id/static_textview_toppings"
-            style="@style/Base.TextAppearance.AppCompat.Title"
+            style="@style/Widget.AppCompat.ActionBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -67,7 +68,7 @@
 
         <TextView
             android:id="@+id/txtvw1"
-            style="@style/Base.TextAppearance.AppCompat.Title"
+            style="@style/Widget.AppCompat.ActionBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -85,8 +86,8 @@
             android:layout_height="match_parent">
         <Button
             android:id="@+id/btn_add"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginBottom="8dp"
@@ -109,8 +110,8 @@
             android:textSize="24sp"/>
         <Button
             android:id="@+id/btn_sub"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:layout_marginBottom="8dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
@@ -126,7 +127,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="submitOrder"
-            android:padding="24sp"
+            android:layout_marginTop="16dp"
+            android:padding="16sp"
             android:text="@string/order_txtvw"
             />
 
@@ -140,12 +142,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="50dp"
             android:layout_marginBottom="75dp"
-            android:padding="32sp"
+            android:padding="54dp"
             android:text="@string/price_txtvw"
             android:textColor="@android:color/black"
-            android:textSize="24sp"
+            android:textSize="16sp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"/>
         </RelativeLayout>
