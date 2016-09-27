@@ -69,9 +69,11 @@ public class MainActivity extends AppCompatActivity {
         message += "\nName: " + name  ;
         if (hasWhippedcream) {
             message += "\nAdd whipped cream.";
+            price*=1.3;
         }
         if (hasChocolate) {
             message += "\nAdd chocolate.";
+            price*=1.7;
         }
         message+= "\nQuantity: "+ quantity;
         message += "\nTotal: R" + price;
@@ -102,7 +104,19 @@ public class MainActivity extends AppCompatActivity {
      * This method calculates the price.
      */
     private double calculatePrice(double num) {
-         num = quantity * 3.24;
+        double discount = 0;
+
+        if(quantity<10){
+        discount=0;}
+        if (quantity>=10&&quantity<25){
+            discount=0.08;}
+        if(quantity>=25&&quantity<50){
+            discount=0.15;}
+        if (quantity>=50) {
+            discount=0.2;}
+
+        double price = quantity*8.50;
+        num= price-(price*discount);
         return num;
     }
 
